@@ -1,0 +1,9 @@
+.card{
+    transition: all ease .2s;
+    box-sizing: border-box;
+}
+
+.card:hover{
+    border: 2px solid rgb(98, 144, 243);
+}
+
