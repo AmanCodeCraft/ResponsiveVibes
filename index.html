@@ -10,11 +10,11 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style/style.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 ">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">FruitHub</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -90,7 +90,6 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary"
               data-bs-dismiss="modal">Close</button>
-            
           </div>
         </div>
       </div>
@@ -108,9 +107,9 @@
         <button type="button" data-bs-target="#carouselExampleCaptions"
           data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active mt-1" style="height: 60vh;">
-          <img src="./images/fruit1.jpg" class="d-block w-100 img-fluid"
+      <div class="carousel-inner mb-5">
+        <div class="carousel-item active" style="height: 60vh;">
+          <img src="./images/fruit5.jpg" class="d-block w-100 img-fluid"
             alt="..." style="height: 100%; object-fit: cover;">
           <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
@@ -148,9 +147,9 @@
 
     <!-- .....slider code completer here...... -->
 
-    <div class="row m-2">
-      <div class="col">
-        <div class="card m-2" style="width: 18rem;">
+    <div class="row mt-4  row-lg-col-12 row-xs-col-1">
+      <div class="col" style="margin-left: 30px;">
+        <div class="card shadow-lg" style="width: 17rem;">
           <img src="./images/fruit2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -161,7 +160,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card m-2" style="width: 18rem;">
+        <div class="card shadow-lg" style="width: 17rem;">
           <img src="./images/fruit2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -172,7 +171,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card m-2" style="width: 18rem;">
+        <div class="card shadow-lg" style="width: 17rem;">
           <img src="./images/fruit2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -183,7 +182,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card m-2" style="width: 18rem;">
+        <div class="card shadow-lg" style="width: 17rem;">
           <img src="./images/fruit2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -193,24 +192,13 @@
           </div>
         </div>
       </div>
-    </div>
-    
+    </div>    
 
-    <!--...... cards area completed here...... -->
-    <div class="container-fluid py-5 px-5">
-      <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong>Sale....! Sale....!</strong> check here links are here...! go
-        fast ....!
-        <button type="button" class="btn-close" data-bs-dismiss="alert"
-          aria-label="Close"></button>
-      </div>
-    </div>
+    <!-- ......card area completed here..... -->
 
-    <!-- .....Sales area completed here...... -->
-
-    <div class="row">
+    <div class="row shadow-lg my-5">
       <div class="display-6">
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <div class="pricing-header px-5 py-3 pb-md-4 mx-auto text-center">
           <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1>
           <p class="fs-5 text-body-secondary">Quickly build an effective pricing
             table for your potential customers with this Bootstrap example. It’s
@@ -220,9 +208,9 @@
       </div>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
+    <div class="row row-cols-1 row-cols-md-3 mb-5 px-md-3 px-lg-5 text-center justify-content-center">
+      <div class="col  ">
+        <div class="card mb-4 rounded-3 shadow-lg">
           <div class="card-header py-3">
             <h4 class="my-0 fw-normal">Free</h4>
           </div>
@@ -241,8 +229,8 @@
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
+      <div class="col card-width">
+        <div class="card mb-4 rounded-3 shadow-lg">
           <div class="card-header py-3">
             <h4 class="my-0 fw-normal">Pro</h4>
           </div>
@@ -260,8 +248,8 @@
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+      <div class="col card-width">
+        <div class="card mb-4 rounded-3 shadow- border-primary">
           <div class="card-header py-3 text-bg-primary border-primary">
             <h4 class="my-0 fw-normal">Enterprise</h4>
           </div>
@@ -281,27 +269,14 @@
       </div>
     </div>
 
-    <!-- .....Pricing completed here...... -->
-
-    <div
-      class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body-tertiary shadow-sm mx-auto"
-        style="width: 60%; height: 300px; border-radius: 21px 21px 0 0;">
-        <img src="./images/fruit1.jpg" alt="img" class="img-fluid"
-          style="object-fit: cover; object-position: center;">
-      </div>
-    </div>
+    <!-- .....Pricing completed here...... -->   
 
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
-      <div class="row">
+      <div class="row p-2 mx-3">
         <div class="col-12 col-md">
-          <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt
-            width="24" height="19">
-          <small class="d-block mb-3 text-body-secondary">© 2017–2024</small>
+          <img class="mb-2" src="./images/fruit2.jpg" alt
+            width="250" height="200">
+          <small class="d-block mb-3 text-body-secondary"> 2017–2024</small>
         </div>
         <div class="col-6 col-md">
           <h5>Features</h5>
