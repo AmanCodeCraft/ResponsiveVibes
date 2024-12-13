@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,6 +12,7 @@
       crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -47,55 +48,307 @@
               <a class="nav-link" href="#">Products</a>
             </li>
           </ul>
-          <div>
-            <button type="button" class="btn btn-primary btn-sm m-1">SignIn</button>
-            <button type="button" class="btn btn-primary btn-sm m-1">SignUp</button>
-          </div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#signinModal">
+            Singin
+          </button>
         </div>
       </div>
     </nav>
 
-<!-- ......crousal start..... -->
+    <!-- ....adding modal...... -->
 
-<div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-      <div class="carousel-item active mt-1" style="height: 60vh;">
-          <img src="./images/fruit1.jpg" class="d-block w-100 img-fluid" alt="..." style="height: 100%; object-fit: cover;">
-          <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+    <!-- Modal -->
+    <div class="modal fade" id="signinModal" tabindex="-1"
+      aria-labelledby="signinModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="signinModalLabel">Register Yourselt</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
           </div>
-      </div>
-      <div class="carousel-item" style="height: 60vh;">
-          <img src="./images/fruit2.jpg" class="d-block w-100 img-fluid" alt="..." style="height: 100%; object-fit: cover;">
-          <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
-      </div>
-      <div class="carousel-item" style="height: 60vh;">
-          <img src="./images/fruit3.jpg" class="d-block w-100 img-fluid" alt="..." style="height: 100%; object-fit: cover;">
-          <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary"
+              data-bs-dismiss="modal">Close</button>
+            
           </div>
+        </div>
       </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-  </button>
-</div>
-   
+    </div>
+
+    <!-- ......crousal start..... -->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active mt-1" style="height: 60vh;">
+          <img src="./images/fruit1.jpg" class="d-block w-100 img-fluid"
+            alt="..." style="height: 100%; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="height: 60vh;">
+          <img src="./images/fruit2.jpg" class="d-block w-100 img-fluid"
+            alt="..." style="height: 100%; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="height: 60vh;">
+          <img src="./images/fruit3.jpg" class="d-block w-100 img-fluid"
+            alt="..." style="height: 100%; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button"
+        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button"
+        data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- .....slider code completer here...... -->
+
+    <div class="row m-2">
+      <div class="col">
+        <div class="card m-2" style="width: 18rem;">
+          <img src="./images/fruit2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card
+              title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-2" style="width: 18rem;">
+          <img src="./images/fruit2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card
+              title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-2" style="width: 18rem;">
+          <img src="./images/fruit2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card
+              title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-2" style="width: 18rem;">
+          <img src="./images/fruit2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card
+              title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!--...... cards area completed here...... -->
+    <div class="container-fluid py-5 px-5">
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Sale....! Sale....!</strong> check here links are here...! go
+        fast ....!
+        <button type="button" class="btn-close" data-bs-dismiss="alert"
+          aria-label="Close"></button>
+      </div>
+    </div>
+
+    <!-- .....Sales area completed here...... -->
+
+    <div class="row">
+      <div class="display-6">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1>
+          <p class="fs-5 text-body-secondary">Quickly build an effective pricing
+            table for your potential customers with this Bootstrap example. It’s
+            built with default Bootstrap components and utilities with little
+            customization.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Free</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0<small
+                class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button"
+              class="w-100 btn btn-lg btn-outline-primary">Sign up for
+              free</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Pro</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$15<small
+                class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>20 users included</li>
+              <li>10 GB of storage</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get
+              started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Enterprise</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$29<small
+                class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>30 users included</li>
+              <li>15 GB of storage</li>
+              <li>Phone and email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Contact
+              us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- .....Pricing completed here...... -->
+
+    <div
+      class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+      <div class="bg-body-tertiary shadow-sm mx-auto"
+        style="width: 60%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="./images/fruit1.jpg" alt="img" class="img-fluid"
+          style="object-fit: cover; object-position: center;">
+      </div>
+    </div>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt
+            width="24" height="19">
+          <small class="d-block mb-3 text-body-secondary">© 2017–2024</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="#">Cool stuff</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="#">Random feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="#">Team feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="#">Stuff for developers</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="#">Another one</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="#">Resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="#">Resource name</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="#">Another resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="#">Team</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="#">Locations</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="#">Privacy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
